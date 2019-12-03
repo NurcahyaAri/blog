@@ -46,7 +46,7 @@ function Article(props){
                 <div className="hero-body">
                     <div className="container">
                         {
-                            coverUrl == '' ? 
+                            coverUrl === '' ? 
                             '' : 
                             <figure className="image is-4by3">
                                 <img src={coverUrl} height={256} alt={"Cover"}/>
