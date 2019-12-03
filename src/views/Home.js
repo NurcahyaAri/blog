@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import {
     getArticlesFromNetwork,
-    removeArticles
+    removeArticles,
 } from '../actions/getArticles';
 
 import Layout from '../components/organisms/Layout';

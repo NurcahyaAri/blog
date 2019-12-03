@@ -45,3 +45,9 @@ export const getArticleByIdFromNetWork = (id) => {
         dispatch(getArticleById(res.data));
     }
 }
+
+export const removeArticle = () => {
+    return {
+        type : REMOVE_ARTICLE_STATE
+    }
+}
