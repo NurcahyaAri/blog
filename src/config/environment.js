@@ -1,1 +1,1 @@
-export const baseUrl = 'https://backend-myblog.herokuapp.com/';
+export const baseUrl = 'https://blog-backend-260901.appspot.com/';
