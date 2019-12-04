@@ -3,10 +3,12 @@ import thunk from 'redux-thunk';
 
 import blogReducer from '../reducers/blog';
 import articleReducer from '../reducers/article';
+import categoryReducer from '../reducers/category';
 
 const combinedReducers = combineReducers({
     blog : blogReducer,
-    article : articleReducer
+    article : articleReducer,
+    category : categoryReducer,
 });
 
 const stores = createStore(

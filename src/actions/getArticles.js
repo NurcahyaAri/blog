@@ -2,7 +2,8 @@ import {
     FETCH_BLOG_DATA,
     GET_ARTICLE_BY_ID,
     REMOVE_ARTICLE_STATE,
-    REMOVE_ARTICLES
+    REMOVE_ARTICLES,
+    GET_ARTICLE_BY_CATEGORY
 } from './types';
 import axios from '../config/blogApi';
 
@@ -49,5 +50,21 @@ export const getArticleByIdFromNetWork = (id) => {
 export const removeArticle = () => {
     return {
         type : REMOVE_ARTICLE_STATE
+    }
+}
+
+const getArticleByCategory = (data) => {
+    return {
+        type : GET_ARTICLE_BY_CATEGORY,
+        data : data
+    }
+}
+
+export const getArticleByCategoryFromNetwork = (categoryId) => {
+    return async (dispatch) => {
+        let res = await axios.get(
+            `contents?categories.id=${categoryId}`
+        );
+        dispatch(getArticleByCategory(res.data));
     }
 }

@@ -1,6 +1,6 @@
 import {
     GET_ARTICLE_BY_ID,
-    REMOVE_ARTICLE_STATE
+    REMOVE_ARTICLE_STATE,
 } from '../actions/types';
 const initState = {
 };
