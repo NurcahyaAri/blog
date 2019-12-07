@@ -9,7 +9,7 @@ import Footer from '../../molecules/Card/Footer';
 function ArticlesCard(props){
     return (
         props.data.map((data, id) => {
-            const url = `/article/${data.id}`;
+            const url = `/blog/article/${data.id}`;
             return (
                 <Link to={url} className="column is-3" key={data.id}>
                     <Card>

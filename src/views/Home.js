@@ -46,10 +46,10 @@ function Home(props){
     }
 
     return (
-        <Layout>
+        <Layout full={false}>
             <div className="container">
                 <div className="container">
-                    <p class="panel-tabs">
+                    <p class="panel-tabs" style={{overflowY: 'scroll'}}>
                         <Link 
                             className={0 === category? "is-active" : ""}  
                             key={0}
