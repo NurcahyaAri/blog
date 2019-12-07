@@ -12,11 +12,13 @@ export default (props) => {
         </div>    
     );
     const notFullScreen = (
-        <div className="container" id="outer-container">
+        <div>
             <Navbar/>
-            <Body>
-                {props.children}
-            </Body>
+            <div className="container" id="outer-container">
+                <Body>
+                    {props.children}
+                </Body>
+            </div>
         </div>
     )
     

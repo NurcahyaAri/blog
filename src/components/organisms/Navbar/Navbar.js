@@ -7,7 +7,7 @@ export default (props) => {
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
-                        <img src="/logo.png" alt="made by love" width="256" height="256"/>
+                        <img src="/logo.png" alt="made by love" width="256" height="256" style={{left: 0}}/>
                     </a>
 
                     <span>
